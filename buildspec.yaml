@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+     runtime-versions:
+       nodejs: latest
+  pre_build:
+    commands:
+      - echo Build started 
+  build:
+    commands:
+      - echo Building wechat_backend:v1.1
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed
+artifacts:
+  files: 
+    - 'build/**/*'
