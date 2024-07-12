@@ -19,4 +19,4 @@ phases:
       - echo Build completed
 artifacts:
   files: 
-    - '/sd_page/sd_page_build/**/*'
+    - 'sd_page/sd_page_build/**/*'
