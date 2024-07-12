@@ -10,6 +10,8 @@ phases:
   build:
     commands:
       - echo Building wechat_backend:v1.1
+      - cd sd_page
+      - npm install
       - npm run build
   post_build:
     commands:
