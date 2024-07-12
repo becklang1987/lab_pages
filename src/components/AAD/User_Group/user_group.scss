@@ -1,0 +1,106 @@
+
+.super-container{
+  width: 100%;
+.group-info{
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  background-color: #9299a664;
+  border-radius: 3px;
+  color: var(--Foundation-Blue-B300, #699BF7);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  .user-btn{
+      display: flex;
+      width: 60px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
+      background-color: #75b2c3;
+      border: none;
+      color:  #0e2b61;
+      border-radius: 6px;
+    }
+    .user-btn.active{
+      display: flex;
+      width: 60px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
+      background-color: #39d091;
+      border: none;
+      color:  #0e2b61;
+      border-radius: 6px;
+    }
+}
+ .user-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+   .group-container{
+    border:#699BF7 1px solid;
+    display: flex;
+    flex-direction: column;
+    .user-btn-container{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      align-self: stretch;
+      border-radius: 3px;
+      color: var(--Foundation-Blue-B300, #699BF7);
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      gap:10px;
+      line-height: normal;
+      margin: 10px;
+      .user-btn{
+          display: flex;
+          align-items: center;
+          height: 36px;
+          align-items: center;
+          justify-content: center;
+          background-color: #75b2c3;
+          border: none;
+          color:  #0e2b61;
+          border-radius: 6px;
+        }
+   }
+ .user-sub-container{
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    color: var(--Foundation-Blue-B300, #699BF7);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  .user-properties{
+    display: flex;
+    padding-left: 12px;
+    align-self: stretch;
+    width: 60%;
+    align-items: center;
+  }
+  .user-value{
+    display: flex;
+    height: 34.5px;
+    align-self: stretch;
+    width: 100%;
+    align-items: center;
+    color:black
+  }
+ }
+}
+ }
+}
+ 
