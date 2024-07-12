@@ -11,6 +11,7 @@ phases:
     commands:
       - echo Building wechat_backend:v1.1
       - cd sd_page
+      - mkdir sd_page_build
       - npm install
       - npm run build
       - cp -r ./build/* ./sd_page_build/
