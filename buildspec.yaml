@@ -13,9 +13,10 @@ phases:
       - cd sd_page
       - npm install
       - npm run build
+      - cp -r /sd_page/build/* /sd_page/sd_page_build/
   post_build:
     commands:
       - echo Build completed
 artifacts:
   files: 
-    - 'build/**/*'
+    - '/sd_page/sd_page_build/**/*'
