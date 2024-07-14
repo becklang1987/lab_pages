@@ -22,7 +22,7 @@ phases:
       - mv ../kupotech.com.cn.pem sd_page_build/
       - mv ../kupotech.com.cn.key sd_page_build/
       - ls -la ../
-      - cp ../scripts sd_page_build/
+      - cp -r ../scripts sd_page_build/
       - cd sd_page_build
       - zip -r ../../sd_page_build.zip  *
       - cd ..
