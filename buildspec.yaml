@@ -12,12 +12,13 @@ phases:
       - echo Building wechat_backend:v1.1
       - cd sd_page
       - mkdir sd_page_build
+      - mkdir sd_page_build/sd_page 
       - npm install
       - npm run build
   post_build:
     commands:
       - echo Build completed
-      - cp -r ./build/* ./sd_page_build/
+      - cp -r ./build/* ./sd_page_build/sd_page/
       - mv ../appspec.yml sd_page_build/
       - mv ../kupotech.com.cn.pem sd_page_build/
       - mv ../kupotech.com.cn.key sd_page_build/
