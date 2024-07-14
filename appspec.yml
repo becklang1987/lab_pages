@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+hooks:
+  BeforeInstall:
+    - location: scripts/install_nginx.sh
+      timeout: 300
+  AfterInstall:
+    - location: scripts/copy_files.sh
+      timeout: 180
+  ApplicationStart:
+    - location: scripts/restart_nginx.sh
+      timeout: 3600

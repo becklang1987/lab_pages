@@ -14,10 +14,15 @@ phases:
       - mkdir sd_page_build
       - npm install
       - npm run build
-      - cp -r ./build/* ./sd_page_build/
   post_build:
     commands:
       - echo Build completed
+      - cp -r ./build/* ./sd_page_build/
+      - cd ..
+      - mv appspec.yml sd_page_build/
+      - cd sd_page_build
+      - zip -r ../sd_page_build.zip  *
+      - cd ..
 artifacts:
   files: 
-    - 'sd_page/sd_page_build/**/*'
+    - 'sd_page_build.zip'

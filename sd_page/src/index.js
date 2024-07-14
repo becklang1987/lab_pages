@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from'react-redux';
-import {createBrowserRouter,RouterProvider,redirect} from 'react-router-dom'
+import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import Login from './pages/login/login'
 import PrivateRoute from './components/PrivateRoutes/privateRoutes';
 import Callback from './pages/callback/callback';
